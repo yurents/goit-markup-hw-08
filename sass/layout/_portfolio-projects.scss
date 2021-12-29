@@ -1,0 +1,61 @@
+.card-set__name {
+  @include font(700, 18px, 2, 0.06em);
+  color: var(--second-title-color);
+}
+
+.card-set__description {
+  @include font(400, 16px, 1.87, 0.03em);
+  color: var(--main-text-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.card-set__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
+  box-sizing: border-box;
+}
+
+.card-set__titles {
+  padding: 20px 24px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-set__link {
+  display: block;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card-set__item-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.card-set__top-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  color: #ffffff;
+  @include font(400, 18px, 1.5, 0.03em);
+  height: 100%;
+  transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .card-set__item:hover & {
+    transform: translateY(0);
+  }
+}

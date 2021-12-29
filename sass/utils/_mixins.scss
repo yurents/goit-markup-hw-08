@@ -1,0 +1,12 @@
+@mixin font($fw: 500, $fs: 14px, $lh: 1.14, $ls: 0.02em) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin flex-center($df: center, $aic: center, $jcc: center) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
