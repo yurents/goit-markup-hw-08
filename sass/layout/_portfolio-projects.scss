@@ -8,20 +8,40 @@
   color: var(--main-text-color);
 }
 
+
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
   margin-bottom: -30px;
+  @media screen and (min-width: 480px) {
+    // margin-top: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 .card-set__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: none;
   box-sizing: border-box;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+  }
 }
 
 .card-set__titles {

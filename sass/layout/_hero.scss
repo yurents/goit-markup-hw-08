@@ -1,29 +1,54 @@
-.hero {
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-}
-
 .main-hero-section {
-  background-color: #2f303a;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../image/imghero.jpg);
+    url(../image/headerimg.jpg);
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/headerimg.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/headerimglaptop.jpg);
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/imghero.jpg);
+  }
+  background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
   flex-direction: column;
-  // padding: 200px 0px;
+  padding: 200px 0px;
 }
 
 .main-hero-section__title {
-  @include font(900, 44px, 1.36, 0.06em);
-  // width: 320px;
-  // margin: 0 auto;
-  margin-bottom: 30px;
+  @include font(700, 20px, 1.62, 0.06em);
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+    @include font(900, 26px, 1.62, 0.06em);
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    @include font(900, 26px, 1.62, 0.06em);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(900, 44px, 1.36, 0.06em);
+  }
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
