@@ -1,14 +1,14 @@
 .portfolio-hero {
   background-color: #ffffff;
-  // @media screen and (min-width: 480px) {
-  //   padding-top: 60px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   padding-top: 60px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   padding-top: 94px;
-  // }
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 .filters-button__btn-item {
   width: 100%;
