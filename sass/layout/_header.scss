@@ -109,7 +109,7 @@
     border-radius: 2px;
     position: absolute;
     display: block;
-    bottom: -28px;
+    bottom: -25px;
     left: 0;
   }
 }
@@ -152,6 +152,8 @@
   position: fixed;
   background-color: #fff;
   top: 0;
+  padding-top: 10px;
+  padding-bottom: 48px;
   width: 100vw;
   height: 100vh;
   z-index: 5;

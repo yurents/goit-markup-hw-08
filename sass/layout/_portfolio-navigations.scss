@@ -11,10 +11,13 @@
   }
 }
 .filters-button__btn-item {
-  width: 100%;
+  @include font(500, 16px, 1.62, 0.03em);
   font-family: inherit;
   cursor: pointer;
-  @include font(500, 16px, 1.62, 0.03em);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
   border-style: none;
   background: #f5f4fa;
   border-radius: 4px;
@@ -49,24 +52,24 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: -15px;
+    margin-bottom: 30px;
+    @include flex-center(center, center, center);
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: wrap;
     margin-top: -15px;
+    margin-bottom: 50px;
     @include flex-center(center, center, center);
   }
 }
 .filters-button__item {
   @media screen and (min-width: 480px) {
     flex-basis: calc(100% / 5 - 8px);
-    margin-top: 15px;
   }
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 5 - 8px);
-    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
-    margin-bottom: 50px;
     // flex-basis: calc(100% / 5 - 8px);
   }
 }
