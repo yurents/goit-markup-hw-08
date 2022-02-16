@@ -118,8 +118,11 @@
   margin-left: auto;
   display: block;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   background-color: transparent;
   border: none;
   @media screen and (min-width: 768px) {
@@ -130,15 +133,16 @@
   }
 }
 .mob-menu__close-btn {
-  position: absolute;
-  display: block;
+  margin-left: auto;
+  display: flex;
   padding: 0;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
+  cursor: pointer;
   border: none;
-  right: 15px;
-  top: 21px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000;
   &:hover {
